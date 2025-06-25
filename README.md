@@ -1,2 +1,3 @@
-# radius-recipes
-A collection of custom Radius recipes (https://docs.radapp.io/guides/recipes/overview/)
+# radius.demo
+
+WordPress as a sample [Radius application](https://docs.radapp.io/guides/author-apps/application/overview/).

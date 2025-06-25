@@ -1,0 +1,40 @@
+name: Radius.Resources
+types:
+  mySQL:
+    capabilities: ["SupportsRecipes"]
+    apiVersions:
+      '2023-10-01-preview':
+        schema:
+          type: object
+          properties:
+            environment:
+              type: string
+              description: "Required: The Radius environment; typically set by the rad CLI"
+            application:
+              type: string
+              description: "Optional: The application which the resource is associated with"
+            database:
+              type: string
+              description: "Optional: The name of the database."
+            user:
+              type: string
+              description: "Read-only: The username for the database."
+              readOnly: true
+            password:
+              type: string
+              description: "Read-only: The password for the database."
+              readOnly: true
+            host:
+              type: string
+              description: "Read-only: The host name of the database."
+              readOnly: true
+            port:
+              type: integer
+              description: "Read-only: The port number of the database."
+              readOnly: true
+            root_password:
+              type: string
+              description: "Read-only:The MySQL root password."
+              readOnly: true
+          required:
+          - environment
